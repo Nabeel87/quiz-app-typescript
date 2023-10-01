@@ -5,7 +5,11 @@ import {getQuizDetails} from './services/quiz_service';
 function App() {
 
   useEffect(()=>{
-    getQuizDetails(5,"easy");
+    async function fetchData() {
+      const question = await getQuizDetails(5,"easy"); 
+      console.log(question);
+    }
+    fetchData();
   },[]);
 
   return (
