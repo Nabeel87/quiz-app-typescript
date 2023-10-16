@@ -8,8 +8,9 @@ export type QuestionType = {
 
 }
 
-export type Quiz = {
+export type QuizType = {
     question : string
     answer : string
-    option : string[] 
+    option : string[]
+    correct_answer: string
 }
