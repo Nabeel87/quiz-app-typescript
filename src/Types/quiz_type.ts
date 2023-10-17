@@ -9,8 +9,13 @@ export type QuestionType = {
 }
 
 export type QuizType = {
-    question : string
-    answer : string
-    option : string[]
+    question: string
+    answer: string
+    option: string[]
     correct_answer: string
+}
+export type propsQuestionType = {
+    question: string
+    options: string[]
+    callback: (e:React.FormEvent<EventTarget>) => void
 }
